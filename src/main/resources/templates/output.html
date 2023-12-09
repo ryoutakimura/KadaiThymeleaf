@@ -7,7 +7,7 @@
 <body>
     <h1 th:text="#{common.title}"></h1>
     <h2 th:text="#{output.subtitle}"></h2>
-    <p th:text="#{output.result1} + #{output.result2}"></p>
+    <p th:text="#{output.result1} +${val}+ #{output.result2}"></p>
     <p th:text="#{output.previous1} + #{output.previous2}"></p>
     <a href="/input" th:text="#{output.link}"></a>
 </body>
