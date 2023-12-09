@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class InputController {
     @GetMapping("/input")
-    public String getInput(@RequestParam("previous") String previous,Model model){
+    public String getInput(@RequestParam(name = "previous", required =false) String previous,Model model){
         model.addAttribute("previous",previous);
         return "input";
     }
