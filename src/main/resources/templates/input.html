@@ -9,6 +9,7 @@
     <h2 th:text="#{input.subtitle}"></h2>
     <form method="post" action="/output">
     <p th:text="#{input.inputtext}"></p>
+    <p th:unless="${previous} eq null" th:text="#{input.previous1} +${previous} +#{input.previous2}"></p>
     <input type = "text" name = "val">
     <button type="submit" th:text="#{input.submitbutton}">
     </form>
