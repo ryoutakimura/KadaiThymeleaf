@@ -10,5 +10,6 @@
     <p th:text="#{output.result1} +${val}+ #{output.result2}"></p>
     <p th:text="#{output.previous1} +${val}+ #{output.previous2}"></p>
     <p><a th:href ="@{/input(previous=${val})}" th:text="#{output.link}"></a></p>
+    <p th:text="${val}"></p>
 </body>
 </html>
